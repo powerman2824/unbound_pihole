@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=""unbound-pihole-github-page-thumbnail.png"" alt="Project Thumbnail" width="600"/>
+</p>
+
 # Pi-hole + Unbound on Raspberry Pi Zero (Docker Compose)
 
 This project sets up a **privacy-first recursive DNS server** using [Pi-hole](https://pi-hole.net) and [Unbound](https://nlnetlabs.nl/projects/unbound/about/) on a **Raspberry Pi Zero (ARMv6/32-bit)**. It uses Docker Compose for easy deployment.
