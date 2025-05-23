@@ -106,7 +106,17 @@ docker compose up -d
   On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
   Test with:
 </ol>
+
 ```bash
 dig google.com @<your-pi-zero-ip>
 ```
+
 You should get a response — confirming your recursive DNS is working! 🎉
+
+### 🔁 Optional: Next Steps:
+
+<ol>
+  Add a second Pi-hole server for redundancy
+  Block telemetry and tracking domains more aggressively
+  Set up HTTPS access using a reverse proxy
+</ol>
