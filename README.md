@@ -47,7 +47,7 @@ server:
 
 ### 3. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
 
-```bash
+```yaml
 version: "3"
 
 services:
