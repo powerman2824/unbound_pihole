@@ -93,8 +93,8 @@ docker compose up -d
 
 ### 🔧 Access the Pi-hole Admin Panel:
 
- - Visit: <pre>http://<your-pi-zero-ip>/admin</pre>
- - Login with your <pre>WEBPASSWORD</pre>
+ - Visit: ```http://<your-pi-zero-ip>/admin ```
+ - Login with your ```WEBPASSWORD ```
 
 ### ✅ Final Configuration Steps:
 
