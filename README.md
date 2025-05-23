@@ -45,7 +45,7 @@ server:
 
 ```
 
-### 3. Paste the following into ~/pihole-unbound/docker-compose.yaml:
+### 3. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
 
 ```bash
 version: "3"
