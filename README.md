@@ -26,7 +26,7 @@ cd ~/pihole-unbound
 nano docker-compose.yaml  # Paste config from below
 ```
 
-### 2. Paste the following into ~/pihole-unbound/unbound/unbound.conf:
+### 2. Paste the following into ```~/pihole-unbound/unbound/unbound.conf```:
 
 ```bash
 server:
