@@ -93,13 +93,13 @@ docker compose up -d
 
 ### 🔧 Access the Pi-hole Admin Panel:
 
- - Visit: http://<your-pi-zero-ip>/admin
- - Login with your WEBPASSWORD
+ - Visit: <pre>http://<your-pi-zero-ip>/admin</pre>
+ - Login with your <pre>WEBPASSWORD</pre>
 
 ### ✅ Final Configuration Steps:
 
  - Go to Settings → DNS in the Pi-hole admin panel
- - Verify that only 127.0.0.1#5335 is set as the upstream DNS
+ - Verify that only <pre>127.0.0.1#5335</pre> is set as the upstream DNS
  - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
  - Test with:
 
