@@ -1,6 +1,4 @@
-<p align="center">
-  <img src=""unbound-pihole-github-page-thumbnail.png"" alt="Project Thumbnail" width="600"/>
-</p>
+![Project Thumbnail](unbound-pihole-github-page-thumbnail.png)
 
 # Pi-hole + Unbound on Raspberry Pi Zero (Docker Compose)
 
