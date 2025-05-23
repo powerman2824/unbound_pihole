@@ -93,19 +93,15 @@ docker compose up -d
 
 ### 🔧 Access the Pi-hole Admin Panel:
 
-<ol>
-  Visit: http://<your-pi-zero-ip>/admin
-  Login with your WEBPASSWORD
-</ol>
+ - Visit: http://<your-pi-zero-ip>/admin
+ - Login with your WEBPASSWORD
 
 ### ✅ Final Configuration Steps:
 
-<ol>
-  Go to Settings → DNS in the Pi-hole admin panel
-  Verify that only 127.0.0.1#5335 is set as the upstream DNS
-  On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
-  Test with:
-</ol>
+ - Go to Settings → DNS in the Pi-hole admin panel
+ - Verify that only 127.0.0.1#5335 is set as the upstream DNS
+ - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
+ - Test with:
 
 ```bash
 dig google.com @<your-pi-zero-ip>
@@ -115,8 +111,6 @@ You should get a response — confirming your recursive DNS is working! 🎉
 
 ### 🔁 Optional: Next Steps:
 
-<ol>
-  Add a second Pi-hole server for redundancy
-  Block telemetry and tracking domains more aggressively
-  Set up HTTPS access using a reverse proxy
-</ol>
+ - Add a second Pi-hole server for redundancy
+ - Block telemetry and tracking domains more aggressively
+ - Set up HTTPS access using a reverse proxy
