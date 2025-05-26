@@ -54,9 +54,6 @@ services:
   unbound:
     image: madnuttah/unbound:latest
     container_name: unbound
-    ports:
-      - "5335:53/tcp"
-      - "5335:53/udp"
     volumes:
       - './unbound:/etc/unbound'
     restart: unless-stopped
@@ -67,14 +64,6 @@ services:
     container_name: pihole
     depends_on:
       - unbound
-    ports:
-      # DNS Ports
-      - "53:53/tcp"
-      - "53:53/udp"
-      # Default HTTP Port
-      - "80:80/tcp"
-      # Default HTTPs Port. FTL will generate a self-signed certificate
-      - "443:443/tcp"
     environment:
       # Set the appropriate timezone for your location (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g:
       TZ: 'America/New_York'
