@@ -152,7 +152,10 @@ docker compose up -d
 
  - Go to Settings → DNS in the Pi-hole admin panel
  - Verify that only ```127.0.0.1#5335``` is set as the upstream DNS
-![DNS Config]("unbounddesktop-shoot-1.png")
+ - <p align="center">
+  <img src="unbounddesktop-shoot-1.png" alt="DNS Config" width="640">
+</p>
+ - ![DNS Config]("unbounddesktop-shoot-1.png")
  - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
  - Test with: ```dig google.com @<your-pi-zero-ip>```
 
