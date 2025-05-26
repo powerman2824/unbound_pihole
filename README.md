@@ -6,6 +6,12 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 
 ---
 
+## Reference Links:
+- [madnuttah/unbound](https://hub.docker.com/r/madnuttah/unbound/tags)
+- [mvance/unbound-rpi](https://hub.docker.com/r/mvance/unbound-rpi/tags)
+- [raspberrypi-os](https://www.raspberrypi.com/documentation/)
+---
+
 ## Features
 
 - **Recursive DNS via Unbound**
