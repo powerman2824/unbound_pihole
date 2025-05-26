@@ -155,10 +155,13 @@ docker compose up -d
 <p align="center">
   <img src="unbounddesktop-shoot-1.png" alt="DNS Config" width="640">
 </p>
+
  - If not added during the intail setup, scroll down and add, and unselct the Google Default
+
 <p align="center">
   <img src="unbounddesktop-shoot-2.png" alt="DNS Config" width="640">
 </p>
+
  - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
  - Test with: ```dig google.com @<your-pi-zero-ip>```
 
