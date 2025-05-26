@@ -50,12 +50,13 @@ server:
 ### 3. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
 
 ```yaml
-version: "3"
-
 services:
   unbound:
-    image: mvance/unbound:arm32v7
+    image: madnuttah/unbound:latest
     container_name: unbound
+    ports:
+      - "5335:53/tcp"
+      - "5335:53/udp"
     volumes:
       - './unbound:/etc/unbound'
     restart: unless-stopped
@@ -66,9 +67,19 @@ services:
     container_name: pihole
     depends_on:
       - unbound
+    ports:
+      # DNS Ports
+      - "53:53/tcp"
+      - "53:53/udp"
+      # Default HTTP Port
+      - "80:80/tcp"
+      # Default HTTPs Port. FTL will generate a self-signed certificate
+      - "443:443/tcp"
     environment:
-      TZ: 'America/New_York'   # Set the appropriate timezone for your location (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g:
-      WEBPASSWORD: 'changeme'  # Choose a strong password
+      # Set the appropriate timezone for your location (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g:
+      TZ: 'America/New_York'
+      # Set a password to access the web interface. Not setting one will result in a random password being assigned
+      FTLCONF_webserver_api_password: 'correct horse battery staple'
       DNS1: 127.0.0.1#5335
       DNS2: 127.0.0.1#5335
     volumes:
