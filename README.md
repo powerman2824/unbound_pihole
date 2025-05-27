@@ -93,7 +93,7 @@ services:
 
 ```
 
-## Example of a Default ```docker-compose.yaml``` from [docker-pi-hole](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
+### Example of a Default ```docker-compose.yaml``` from [docker-pi-hole](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
 
 ```yaml
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
@@ -173,7 +173,7 @@ docker compose up -d
 
 ---
 
-## Good Sites to Test Pi-hole Blocking:
+### Good Sites to Test Pi-hole Blocking:
 
 | Website                     | What You'll See Without Pi-hole        | What to Look For         |
 |-----------------------------|----------------------------------------|--------------------------|
@@ -187,7 +187,7 @@ docker compose up -d
 
 ---
 
-## You should get a response — confirming your recursive DNS is working!
+### You should get a response — confirming your recursive DNS is working!
 
 ### Optional: Next Steps:
 
