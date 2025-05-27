@@ -26,7 +26,7 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 
 ## ⚙️ Setup Instructions
 
-### 1. Create project directories and configuration files - []
+### 1. Create project directories and configuration files
 
 ```bash
 mkdir -p ~/pihole-unbound/unbound
