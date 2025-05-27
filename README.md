@@ -26,7 +26,7 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 
 ## ⚙️ Setup Instructions
 
-### 1. Create project directories and configuration files
+### 1. Create project directories and configuration files ![]
 
 ```bash
 mkdir -p ~/pihole-unbound/unbound
@@ -34,7 +34,7 @@ cd ~/pihole-unbound/unbound
 nano unbound.conf  # Paste config from below
 ```
 
-### 2. Paste the following into ```~/pihole-unbound/unbound/unbound.conf```:
+### 2. Paste the following into ```~/pihole-unbound/unbound/unbound.conf```
 
 ```bash
 server:
@@ -59,7 +59,7 @@ cd ~/pihole-unbound
 nano docker-compose.yaml  # Paste config from below
 ```
 
-### 4. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
+### 4. Paste the following into ```~/pihole-unbound/docker-compose.yaml```
 
 ```yaml
 services:
@@ -137,24 +137,24 @@ services:
     restart: unless-stopped
 ```
 
-### 5. Download the root hints file:
+### 5. Download the root hints file
 
 ```bash
 curl -o ./unbound/root.hints https://www.internic.net/domain/named.root
 ```
 
-### 6. Start the Containers:
+### 6. Start the Containers
 
 ```bash
 docker compose up -d
 ```
 
-### 7. Access the Pi-hole Admin Panel:
+### 7. Access the Pi-hole Admin Panel
 
  - Visit: ```http://<your-pi-zero-ip>/admin```
  - Login with your ```FTLCONF_webserver_api_password```
 
-### 8. Final Configuration Steps:
+### 8. Final Configuration Steps
 
  - Go to Settings → DNS in the Pi-hole admin panel
  - Verify that only ```127.0.0.1#5335``` is set as the upstream DNS
@@ -189,7 +189,7 @@ docker compose up -d
 
 ### You should get a response — confirming your recursive DNS is working!
 
-### Optional: Next Steps:
+### Optional: Next Steps
 
  - Add a second Pi-hole server for redundancy
  - Block telemetry and tracking domains more aggressively
