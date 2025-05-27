@@ -10,6 +10,9 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 - [madnuttah/unbound](https://hub.docker.com/r/madnuttah/unbound/tags)
 - [mvance/unbound-rpi](https://hub.docker.com/r/mvance/unbound-rpi/tags)
 - [raspberrypi-os](https://www.raspberrypi.com/documentation/)
+- [docker/engine/raspberry](https://docs.docker.com/engine/install/raspberry-pi-os/)
+- [nano-editor](https://nano-editor.org/)
+
 ---
 
 ## Features
@@ -49,7 +52,7 @@ server:
   cache-max-ttl: 86400
 ```
 
-### 3. Move up one directory ```~/pihole-unbound/``` and create the ```docker-compose.yaml``` file
+### 3. Move up one directory ```~/pihole-unbound``` and create the ```docker-compose.yaml``` file
 
 ```bash
 cd ~/pihole-unbound
@@ -90,7 +93,7 @@ services:
 
 ```
 
-### Example of a Default ```docker-compose.yaml``` from [Pi-Hole.net **GitHub Page**](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
+## Example of a Default ```docker-compose.yaml``` from [pi-hole/docker-pi-hole/](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
 
 ```yaml
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
@@ -184,7 +187,7 @@ docker compose up -d
 
 ---
 
-### You should get a response — confirming your recursive DNS is working!
+## You should get a response — confirming your recursive DNS is working!
 
 ### Optional: Next Steps:
 
