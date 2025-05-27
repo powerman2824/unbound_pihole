@@ -155,21 +155,23 @@ docker compose up -d
 
  - Go to Settings → DNS in the Pi-hole admin panel
  - Verify that only ```127.0.0.1#5335``` is set as the upstream DNS
-> [!IMPORTANT]
+
 <p align="center">
   <img src="unbounddesktop-shoot-1.png" alt="DNS Config" width="640">
 </p>
->
+
  - If not added during the intail setup, scroll down and add, and unselct the Google Default
-> [!IMPORTANT]
+
 <p align="center">
   <img src="unbounddesktop-shoot-2.png" alt="DNS Config" width="640">
 </p>
->
+
  - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
 
+---
+
 ## Good Sites to Test Pi-hole Blocking:
-> [!TIP]
+
 | Website                     | What You'll See Without Pi-hole        | What to Look For         |
 |-----------------------------|----------------------------------------|--------------------------|
 | https://www.yahoo.com       | Tons of banner and sidebar ads         | Ads disappear            |
@@ -179,7 +181,9 @@ docker compose up -d
 | https://www.tmz.com         | Popups, autoplay videos                | Smoother load            |
 | https://www.dailymail.co.uk | Wall-to-wall ads                       | Much cleaner             |
 | https://www.theverge.com    | Tech content with trackers & analytics | Reduced requests         |
->
+
+---
+
 ### You should get a response — confirming your recursive DNS is working!
 
 ### Optional: Next Steps:
