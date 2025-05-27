@@ -23,7 +23,7 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 
 ## ⚙️ Setup Instructions
 
-### 1. Create project directories and configuration files
+### - [] 1. Create project directories and configuration files
 
 ```bash
 mkdir -p ~/pihole-unbound/unbound
@@ -167,8 +167,8 @@ docker compose up -d
 ## Good Sites to Test Pi-hole Blocking:
 
 ```bash
-| Website                      | What You'll See Without Pi-hole        | What to Look For         |
-|-----------------------------|-----------------------------------------|--------------------------|
+| Website                     | What You'll See Without Pi-hole        | What to Look For         |
+|-----------------------------|----------------------------------------|--------------------------|
 | https://www.yahoo.com       | Tons of banner and sidebar ads         | Ads disappear            |
 | https://www.cnn.com         | Inline ads between articles            | Blank spots              |
 | https://www.speedtest.net   | Sponsored banners, popups              | Clean test page          |
