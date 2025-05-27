@@ -23,15 +23,12 @@ This project sets up a **privacy-first recursive DNS server** using [Pi-hole](ht
 
 ## ⚙️ Setup Instructions
 
-### - [ ] 1. Create project directories and configuration files
+### 1. Create project directories and configuration files
 
 ```bash
 mkdir -p ~/pihole-unbound/unbound
 cd ~/pihole-unbound/unbound
 nano unbound.conf  # Paste config from below
-
-cd ~/pihole-unbound
-nano docker-compose.yaml  # Paste config from below
 ```
 
 ### 2. Paste the following into ```~/pihole-unbound/unbound/unbound.conf```:
@@ -50,10 +47,16 @@ server:
   harden-dnssec-stripped: yes
   cache-min-ttl: 3600
   cache-max-ttl: 86400
-
 ```
 
-### 3. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
+### 3. Move up one directory ```~/pihole-unbound/``` and create the ```docker-compose.yaml``` file
+
+```bash
+cd ~/pihole-unbound
+nano docker-compose.yaml  # Paste config from below
+```
+
+### 4. Paste the following into ```~/pihole-unbound/docker-compose.yaml```:
 
 ```yaml
 services:
@@ -131,42 +134,42 @@ services:
     restart: unless-stopped
 ```
 
-### 4. Download the root hints file:
+### 5. Download the root hints file:
 
 ```bash
 curl -o ./unbound/root.hints https://www.internic.net/domain/named.root
 ```
 
-### 5. Start the Containers:
+### 6. Start the Containers:
 
 ```bash
 docker compose up -d
 ```
 
-### 6. Access the Pi-hole Admin Panel:
+### 7. Access the Pi-hole Admin Panel:
 
  - Visit: ```http://<your-pi-zero-ip>/admin```
- - Login with your ```WEBPASSWORD```
+ - Login with your ```FTLCONF_webserver_api_password```
 
-### 7. Final Configuration Steps:
+### 8. Final Configuration Steps:
 
  - Go to Settings → DNS in the Pi-hole admin panel
  - Verify that only ```127.0.0.1#5335``` is set as the upstream DNS
+> [!IMPORTANT]
 <p align="center">
   <img src="unbounddesktop-shoot-1.png" alt="DNS Config" width="640">
 </p>
-
+>
  - If not added during the intail setup, scroll down and add, and unselct the Google Default
-
+> [!IMPORTANT]
 <p align="center">
   <img src="unbounddesktop-shoot-2.png" alt="DNS Config" width="640">
 </p>
-
+>
  - On your client device (PC, phone, router), set your Pi Zero’s IP as the DNS server
 
 ## Good Sites to Test Pi-hole Blocking:
-
-```bash
+> [!TIP]
 | Website                     | What You'll See Without Pi-hole        | What to Look For         |
 |-----------------------------|----------------------------------------|--------------------------|
 | https://www.yahoo.com       | Tons of banner and sidebar ads         | Ads disappear            |
@@ -176,8 +179,7 @@ docker compose up -d
 | https://www.tmz.com         | Popups, autoplay videos                | Smoother load            |
 | https://www.dailymail.co.uk | Wall-to-wall ads                       | Much cleaner             |
 | https://www.theverge.com    | Tech content with trackers & analytics | Reduced requests         |
-```
-
+>
 ### You should get a response — confirming your recursive DNS is working!
 
 ### Optional: Next Steps:
