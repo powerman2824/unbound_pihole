@@ -167,14 +167,15 @@ docker compose up -d
 ## Good Sites to Test Pi-hole Blocking:
 
 ```bash
-# Website	                  |#What You'll See Without Pi-hole	       |#What to Look For
-https://www.yahoo.com	      |#Tons of banner and sidebar ads	       |#Ads disappear
-https://www.cnn.com	        |#Inline ads between articles	           |#Blank spots
-https://www.speedtest.net	  |#Sponsored banners, popups	             |#Clean test page
-https://forbes.com	        |#Adblock wall, video autoplay	         |#Blocked elements
-https://tmz.com	            |#Popups, autoplay videos	               |#Smoother load
-https://www.dailymail.co.uk |#Wall-to-wall ads	                     |#Much cleaner
-https://www.theverge.com	  |#Tech content with trackers & analytics |#Reduced requests
+| Website                      | What You'll See Without Pi-hole        | What to Look For         |
+|-----------------------------|-----------------------------------------|--------------------------|
+| https://www.yahoo.com       | Tons of banner and sidebar ads         | Ads disappear            |
+| https://www.cnn.com         | Inline ads between articles            | Blank spots              |
+| https://www.speedtest.net   | Sponsored banners, popups              | Clean test page          |
+| https://forbes.com          | Adblock wall, video autoplay           | Blocked elements         |
+| https://www.tmz.com         | Popups, autoplay videos                | Smoother load            |
+| https://www.dailymail.co.uk | Wall-to-wall ads                       | Much cleaner             |
+| https://www.theverge.com    | Tech content with trackers & analytics | Reduced requests         |
 ```
 
 ### You should get a response — confirming your recursive DNS is working!
