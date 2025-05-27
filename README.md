@@ -93,7 +93,7 @@ services:
 
 ```
 
-## Example of a Default ```docker-compose.yaml``` from [pi-hole/docker-pi-hole/](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
+## Example of a Default ```docker-compose.yaml``` from [docker-pi-hole](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)
 
 ```yaml
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
